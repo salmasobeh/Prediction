@@ -1,3 +1,24 @@
+@media screen and (max-width: 700px) {
+    .lable {
+        font-size: 2.2ch !important;
+    }
+    #gender {
+        font-size: 2ch !important;
+    }
+    #age {
+        font-size: 2ch !important;
+    }
+    .box {
+        width: 30% !important;
+        border-radius: 2px !important;
+        font-size: 12px !important;
+        text-align: left !important;
+    }
+    #nationality {
+        font-size: 2ch !important;
+    }
+}
+
 .row {
     display: flex;
     flex-direction: column;
