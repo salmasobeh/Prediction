@@ -43,3 +43,31 @@ async function getapi4(url) {
     console.log(data)
     showImage(data)
 }
+//Show data functions
+function showGender(data) {
+
+    let gender = `${data.gender}`
+    const genderstr = gender.charAt(0).toUpperCase() + gender.slice(1)
+    document.getElementById("gender").innerText = "Gender: " + genderstr
+}
+
+function showAge(data) {
+    let age = `${data.age}`
+    document.getElementById("age").innerText = "Age: " + age
+}
+
+function showCountry(data) {
+
+    let countries = data.country
+    for (var i = 0; i < countries.length; i++) {
+        let c = countries[i].country_id
+        let k = i + 1
+        document.getElementById("nationality").innerText += "Nationality(" + k++ + "):" + " " + c + "\n \n"
+    }
+}
+
+
+function showImage(data) {
+    let message = `${data.message}`
+    document.getElementById("image").src = message
+}
