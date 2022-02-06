@@ -66,8 +66,13 @@ function showCountry(data) {
     }
 }
 
-
 function showImage(data) {
     let message = `${data.message}`
     document.getElementById("image").src = message
 }
+
+window.addEventListener('load', (event) => {
+    const url4 = "https://dog.ceo/api/breeds/image/random"
+    getapi4(url4)
+    console.log('page is fully loaded');
+});
